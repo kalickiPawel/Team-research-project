@@ -120,4 +120,12 @@ env.bak/
 venv.bak/
 pip-selfcheck.json
 
+### VisualStudioCode ###
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 # End of https://www.gitignore.io/api/venv,python
