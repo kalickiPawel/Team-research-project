@@ -130,6 +130,6 @@ pip-selfcheck.json
 
 
 ### Created files ###
-src/main.cpp
+main.cu
 
 # End of https://www.gitignore.io/api/venv,python
