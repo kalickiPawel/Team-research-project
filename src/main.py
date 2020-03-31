@@ -4,7 +4,7 @@ file = open("main.cpp", "w+")
 # program = "{0}\n\n{1} {2} \n {3}::{4} \"Hello World!\" << {3}::{5} \n {6} 0; \n {7}".format(*tab)
 # file.writelines(program)
 
-libraries = ["#include <iostream>\n"]
+libraries = ["#include", "<iostream>"]
 namespaces = ["using namespace std;"]
 keyWords = ["#define", "typedef", "return", "__global__", "void", "sizeof"]
 functions = ["MyKernel", "main", "cudaMalloc", "cudaMemcpy", "cudaMemcpyHostToDevice", "cudaMemcpyDeviceToHost"]
@@ -12,9 +12,10 @@ typesVariables = ["int", "int*", "int**", ]
 variables = ["N", "arrtype", "row", "col", "h", "w", "j", "d_A", "blockIdx", "blockDim", "threadIdx", "rows", "cols", "dA", "A"]
 values = ["100", "8", "0"]
 
-file.writelines(libraries)
+definitionLib = "\n{0} {1}\n".format(libraries[0], libraries[1])
+file.writelines(definitionLib)
 
-definitionConst = "{0} {1} {2} \n\n".format(keyWords[0], variables[0], values[0])
+definitionConst = "\n{0} {1} {2} \n\n".format(keyWords[0], variables[0], values[0])
 file.writelines(definitionConst)
 
 file.writelines(namespaces)
