@@ -128,4 +128,8 @@ pip-selfcheck.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
+
+### Created files ###
+src/main.cpp
+
 # End of https://www.gitignore.io/api/venv,python
