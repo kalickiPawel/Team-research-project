@@ -83,3 +83,4 @@ mainCudaFunc4 = "\t{0}({2}[0], {1}, {3}({4}) * {5}* {6}, {7});\n\n}}".format(fun
 file.writelines(mainCudaFunc4)
 
 file.close()
+
